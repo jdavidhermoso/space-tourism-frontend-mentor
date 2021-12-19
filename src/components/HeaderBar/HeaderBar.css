@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--generic-padding);
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__toggler {
+  width: var(--menu-togglers-size);
+  height: var(--menu-togglers-size);
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}

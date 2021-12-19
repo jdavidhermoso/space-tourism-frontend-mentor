@@ -1,0 +1,51 @@
+/* TODO: Make menu background transparent and blur */
+.nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  overflow-y: scroll;
+  z-index: 15;
+  transition: transform ease-in-out .2s;
+  transform: translateX(100%);
+}
+
+.nav.open {
+  transform: translateX(0);
+}
+
+.nav__header {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: var(--generic-padding);
+  height: var(--content-container-top-padding);
+}
+
+.nav__close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.nav__list {
+  margin-top: var(--generic-padding);
+}
+
+.nav__item {
+  color: #FFFFFF;
+  padding: 0 var(--generic-padding) var(--generic-padding) var(--generic-padding);
+  font-family: var(--nav-font-family);
+  letter-spacing: var(--nav-text-char-space);
+  text-transform: uppercase;
+}
+
+.nav__item-number {
+  font-weight: bold;
+  margin-right: var(--nav-number-space);
+}
