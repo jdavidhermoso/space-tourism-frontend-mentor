@@ -10,23 +10,24 @@ import HeaderBar from "./components/HeaderBar/HeaderBar";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HeaderBar/>
-    <div className="content__container">
-      <BrowserRouter>
+
+    <BrowserRouter>
+      <HeaderBar/>
+      <div className="content__container">
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/home" element={<Home/>}/>
           <Route path="destinations" element={<Destinations/>}/>
           <Route path="crew" element={<Crew/>}/>
           <Route path="technology" element={<Technology/>}/>
           <Route
             path="*"
             element={
-              <Navigate to="/"/>
+              <Navigate to="/home"/>
             }
           />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

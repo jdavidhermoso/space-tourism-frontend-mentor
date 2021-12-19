@@ -27,10 +27,25 @@
 
 .nav__close-btn {
   display: flex;
-  /*width: var(--app-logo-size);*/
-  /*height: var(--app-logo-size);*/
   justify-content: center;
   align-items: center;
 
   cursor: pointer;
+}
+
+.nav__list {
+  margin-top: var(--generic-padding);
+}
+
+.nav__item {
+  color: #FFFFFF;
+  padding: 0 var(--generic-padding) var(--generic-padding) var(--generic-padding);
+  font-family: var(--nav-font-family);
+  letter-spacing: var(--nav-text-char-space);
+  text-transform: uppercase;
+}
+
+.nav__item-number {
+  font-weight: bold;
+  margin-right: var(--nav-number-space);
 }

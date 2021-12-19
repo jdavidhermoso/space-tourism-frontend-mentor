@@ -1,5 +1,6 @@
 import './NavBar.css';
 import CloseIcon from "../../icons/Close";
+import {Link} from "react-router-dom";
 
 export default function NavBar(props) {
   return (
@@ -9,11 +10,29 @@ export default function NavBar(props) {
           <CloseIcon/>
         </button>
       </div>
-      <ul>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
+      <ul className="nav__list">
+
+
+        <li className="nav__item">
+          <Link to="/"><span className="nav__item-number">00</span> Home
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="destinations">
+            <span
+              className="nav__item-number">01</span> Destination
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="crew">
+            <span className="nav__item-number">02</span> Crew
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="technology">
+            <span className="nav__item-number">03</span> Technology
+          </Link>
+        </li>
       </ul>
     </nav>
   );

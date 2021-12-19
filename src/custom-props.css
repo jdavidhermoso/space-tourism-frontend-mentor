@@ -11,9 +11,11 @@
   --subheading-1-font-size: 28px;
   --subheading-2-font-size: 14px;
   --subheading-2-char-space: 2.35;
-  --nav-text-font-size: 16px;
-  --nav-text-char-space: 2.7;
+  --nav-text-font-size: 1rem;
+  --nav-text-char-space: 2.7px;
   --nav-text: 2.35;
+  --nav-font-family: 'Barlow Condensed';
+  --nav-number-space: 11px;
   --generic-padding: 24px;
   --app-logo-size: 40px;
   --menu-togglers-size: 24px;
